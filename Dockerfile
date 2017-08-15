@@ -2,7 +2,8 @@ FROM node:8
 
 RUN apt-get update && apt-get install -y \
     python-dev \
-    zip
+    zip \
+    yarn
 RUN curl -O https://bootstrap.pypa.io/get-pip.py
 RUN python get-pip.py
 RUN pip install awscli
